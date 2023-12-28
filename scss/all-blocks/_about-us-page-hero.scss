@@ -1,0 +1,103 @@
+.about-us-hero {
+    margin-bottom: 168px;
+    padding: 137px 0 137px 85px;
+    border-radius: 10px;
+    background-color: $HeroBG;
+    background-image: url("../assets/img/about-us-hero-BG-D.jpg");
+    background-position: -80px;
+    background-repeat: no-repeat;
+
+    &-title {
+        @include heading-2 ($LightCreamBG );
+        margin-bottom: 24px;
+
+    }
+
+    &-text {
+        @include paragraphs ($LightCreamBG );
+        width: 445px;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .about-us-hero {
+        margin-bottom: 144px;
+
+        &-text {
+            width: 398px;
+        }
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .about-us-hero{
+        padding: 118px 0 118px 58px;
+        margin-bottom: 120px;
+        background-position: -200px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .about-us-hero {
+        padding: 110px 0 110px 58px;
+        background: url("../assets/img/about-us-hero-BG-T.jpg");
+        background-position: -70px;
+
+        &-text{
+            font-size: 15px;
+            width: 340px;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .about-us-hero {
+        background-position: -270px;
+        padding:111px 0 87px;
+        margin-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title{
+            text-align: center;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        &-text{
+            width: 279px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .about-us-hero {
+
+        padding: 50px 0;
+        &-text {
+            width: 200px;
+        }
+
+    }
+}
+
+@media only screen and (max-width:270px) {
+    .about-us-hero {
+        padding: 30px 15px;
+
+        &-title {
+            width: 170px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-text {
+            width: 160px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

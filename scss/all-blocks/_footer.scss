@@ -1,0 +1,99 @@
+.footer {
+
+    background-color: $ChooseBG;
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 47px 20px;
+
+    }
+
+    &-left-box{
+        display: flex;
+        gap: 0 103px;
+        align-items: center;
+    }
+
+    &-text-list{
+        display: flex;
+        gap: 33px;
+    }
+
+    &-text-link{
+        @include link ($Grey);
+
+    }
+
+    &-text-link:hover{
+        @include link ($PaleOrange);
+    }
+
+    &-text-link:active{
+        @include link ($LightCreamBG);
+    }
+
+    &-img-list{
+        display: flex;
+        gap: 48px;
+    }
+
+    &-icon-img:hover{
+        transform: scale(1.2);
+    }
+
+    &-icon-img:active{
+        background-color:$PaleOrange;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .footer{
+        &-box{
+         flex-direction: column;
+         gap: 65px 0;   
+        }
+
+        &-left-box{
+            flex-direction: column;
+            gap: 32px 0;
+        }
+    }
+}
+
+@media only screen and (max-width:704px) {
+    .footer{
+
+        &-box{
+            gap: 48px 0;
+        }
+
+        &-left-box{
+            gap: 48px 0;
+        }
+        &-img{
+            width: 218px;
+            height: 24px;
+        }
+
+        &-text-list{
+            flex-direction: column;
+            align-items: center;
+            gap: 24px 0;
+        }
+    }
+}
+
+@media only screen and (max-width:240px) {
+    .footer{
+        &-img{
+            width: 182px;
+            height: 20px;
+        }
+
+        &-img-list{
+            gap: 30px;
+        }
+    }
+}
+

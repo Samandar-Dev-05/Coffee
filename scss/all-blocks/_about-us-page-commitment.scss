@@ -1,0 +1,71 @@
+.commitment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-img {
+        width: 445px;
+        height: 520px;
+        border-radius: 8px;
+        background: $DarkCyan;
+    }
+
+    &-title {
+        @include heading-2 ($DarkGreyBlue);
+        margin-bottom: 32px;
+    }
+
+    &-text {
+        @include paragraphs ($DarkGreyBlue);
+        width: 540px;
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .commitment {
+
+        &-img {
+            width: 400px;
+            height: 470px;
+            object-fit: cover
+        }
+
+        &-title{
+            @include heading-3 ($DarkCyan);
+            line-height: 48px;
+            margin-bottom: 30px;
+        }
+
+        &-text{
+            width: 400px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width:855px) {
+    .commitment{
+        &-text{
+            width: 339px;
+        }
+    }
+}
+
+@media only screen and (max-width:790px){
+    .commitment{
+        flex-direction: column;
+        text-align: center;
+        gap: 48px 0;
+
+        &-img{
+            width: 82vw;
+            height: 100vw;
+        }
+
+        &-text{
+            width: 82vw;
+        }
+
+    }
+}

@@ -1,0 +1,119 @@
+.collection {
+    padding-top: 126px;
+    background: url(../assets/home-page-img/svg/collection-BG-img.svg);
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    margin-bottom: 188px;
+
+    &-list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        text-align: center;
+    }
+
+    &-info-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        @include heading-4 ($DarkGreyBlue);
+        margin-bottom: 24px;
+        margin-top: 72px;
+    }
+
+    &-text {
+        @include paragraphs ( $DarkGreyBlue);
+        width: 250px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1129px) {
+    .collection {
+        background-size: 75%;
+        background-position: 120px 30px;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .collection {
+
+        background-position-y: 60px ;
+        margin-bottom: 144px;
+
+        
+        &-list{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            gap: 47.5px;
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            gap: 0 36px;
+        }
+
+        &-title{
+            margin: 0 0 24px 0;
+        }
+
+        &-text{
+            width: 282px;
+        }
+
+       
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .collection {
+
+        background-position: 13vw 27px;
+        margin-bottom: 120px;
+
+        &-list{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-item{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-info-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .collection{
+        padding-top: 60px;
+        background-position-x: 10vw;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .collection{
+        img{
+            width: 180px;
+            object-fit: cover;
+        }
+        &-text{
+            width: 180px;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.works {
+
+    margin-bottom: 200px;
+    &-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    &-title {
+        @include heading-3 ($Grey);
+        margin-bottom: 80px;
+    }
+
+    &-img {
+        margin-bottom: 67px;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: center;
+        gap: 95px;
+    }
+
+    &-item {
+        width: 285px;
+        margin-bottom: 64px;
+    }
+
+    &-item-title1 {
+        @include heading-1 ($Title);
+        margin-bottom: 38px;
+    }
+
+    &-item-title2 {
+        @include heading-3($DarkGreyBlue);
+        margin-bottom: 42px;
+        width: 255px;
+    }
+
+    &-item-text {
+        @include paragraphs ($DarkGreyBlue);
+    }
+
+    &-button {
+        @include button ($LightCreamBG, $DarkCyan);
+    }
+
+    &-button:hover{
+        transform: scale(0.9);
+    }
+
+    &-button:active{
+        background-color: $ButtonBG;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .works {
+        &-list {
+            gap: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .works {
+        margin-bottom: 144px;
+        &-list {
+            gap: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width:914px) {
+    .works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-list {
+            flex-wrap: wrap;
+            gap: 56px 95px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:704px) {
+    .works {
+        margin-bottom: 120px;
+        &-img {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .works {
+
+        &-title{
+            text-align: center;
+        }
+
+        &-item {
+            width: 100vw;
+        }
+
+        &-item-title2 {
+            width: 98vw;
+        }
+
+        &-item-text {
+            width: 98vw;
+        }
+
+        &-button{
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+    }
+}
