@@ -806,7 +806,8 @@ button {
 .commitment {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 69px;
 }
 .commitment-img {
   width: 445px;
@@ -834,7 +835,7 @@ button {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1100px) {
   .commitment-img {
     width: 400px;
     height: 470px;
@@ -856,23 +857,45 @@ button {
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 920px) {
+  .commitment-img {
+    width: 281px;
+    height: 470px;
+  }
   .commitment-text {
     width: 339px;
   }
 }
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 760px) {
+  .commitment {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
   .commitment {
     flex-direction: column;
-    text-align: center;
-    gap: 48px 0;
+    align-items: center;
   }
   .commitment-img {
-    width: 82vw;
-    height: 100vw;
+    margin-bottom: 48px;
+    width: 87.2vw;
+    height: auto;
+  }
+  .commitment-info {
+    text-align: center;
+  }
+  .commitment-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 48px;
   }
   .commitment-text {
-    width: 82vw;
+    width: 87.2vw;
+    font-size: 15px;
+    line-height: 25px;
+    height: 375px;
+    overflow-y: auto;
+    overflow-x: visible;
   }
 }
 .footer {
