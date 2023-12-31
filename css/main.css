@@ -1051,6 +1051,7 @@ button {
 }
 .headquartes {
   margin-top: 168px;
+  margin-bottom: 168px;
 }
 .headquartes-title {
   color: #83888F;
@@ -1119,6 +1120,7 @@ button {
 @media only screen and (max-width: 500px) {
   .headquartes {
     margin-top: 120px;
+    margin-bottom: 144px;
   }
   .headquartes-title {
     text-align: center;

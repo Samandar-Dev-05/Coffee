@@ -1,5 +1,6 @@
 .headquartes {
     margin-top: 168px;
+    margin-bottom: 168px;
 
     &-title {
         @include heading-4($Grey);
@@ -68,6 +69,7 @@
 @media only screen and (max-width:500px) {
     .headquartes {
         margin-top: 120px;
+        margin-bottom: 144px;
 
         &-title {
             text-align: center;
